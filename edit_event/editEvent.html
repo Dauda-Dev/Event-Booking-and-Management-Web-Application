@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Events</title>
+    <link rel="stylesheet" href="../create_event/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
+
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">eventbridge</div>
+
+            <ul class="nav-items">
+               
+                <li>
+                    <a href="" id="user-name">your username</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-root">
+
+        
+        <div class="categories">
+            <div class="heading">
+                <!-- <h1>Events</h1> -->
+            </div>
+            <nav class="navbar-categories">
+                <ul class="nav-items">
+                    <li id="first-item">
+                        <div class="back-arr"><img src="/resources/img/arrow/back-arrow.svg" alt="" class="back-arr">
+                        <a href="/EventListPage/EventList.html"> <img src="" alt="" class="">Events</a>
+                        </div>
+                       
+                    </li>
+
+                </ul>
+            </nav>
+
+          
+
+       
+        <div class="horizontal">
+           
+            <div class="search-container">
+                <div class="location-heading">
+                    <div  ><h2 class="input-head">Basic info</h2>
+                    <p>Name your event and tell event-goers why 
+                        they should come. Add details that highlight
+                         what makes it unique.</p></div>
+                <div class="">
+                    <label for="title"></label>
+                    <input type="text" class="search-input" placeholder="Event title" name="title" id="event-title" required>
+                </div>
+                <div class="">
+                    <label for="organiser"></label>
+                    <input type="text" class="search-input" placeholder="Tell attendees who is organising this event" name="organiser" id="event-organiser" required>
+                </div>
+
+                <div class="">
+                    <label for="summary"></label>
+                    <textarea class="search-input" placeholder="Tell attendees what your event is all about, be descriptive" name="summary" id="event-summary" rows="4" cols="50" required></textarea></textarea>
+                </div>
+
+                <div class="status">
+                                
+                    <input type="text" placeholder="amount $ i.e 40.00" class="event-status" id="event-cost">
+                    <input type="file" name="image" accept="image/png, image/jpeg" name="status" class="event-status" id = "event-img" >
+                       
+                       
+                  
+                </div>
+
+
+            </div>
+
+            <div class="event-location">
+                <div class="location-heading">
+                    <div  ><h2 class="input-head">Location</h2>
+                    <p>Help people in the area discover your 
+                        event and let attendees know where to 
+                        show up.</p></div>
+                    <div id="three">
+                        <button class="list-button" id="venue">Venue</button>
+                        <button class="list-button" id="online">Online event</button>
+                        <button class="list-button" id="future" >To be announced</button>
+                    
+                    </div>
+                    <div class="">
+                       <!-- ? <label for="title">Location</label> -->
+                        <input type="text" class="search-input" placeholder="Location" name="title" id="event-address" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-location">
+                <div class="location-heading">
+                    <div ><h2 class="input-head">Date and Time</h2>
+                    <p>Tell event-goers when your event starts 
+                        and ends so they can make plans to attend.
+                    </p>
+                </div>
+                    <div id="three">
+                        <select class="list-button-time " >
+                            <option value="all">All</option>
+                            <option value="music and Arts">music and Arts</option>
+                            <option value="expo">expo</option>
+                            <option value="science">science</option>
+                            <option value="Free">Free</option>
+                            <option value="Travel & outdoor">Travel & outdoor</option>
+                            <option value="Business">Business</option>
+                            <option value="Health">Health</option>
+                        </select>
+                        <!-- <button class="list-button-time" id="music" ><p>Music and culture</p></button>
+                        <button class="list-button-time" id="expo" ><p>Expo</p></button> -->
+                        
+                    </div>
+                    <div class="choose-date">
+                        <div class="date-field">
+                            <div class="start">
+                                <div class="time-container">
+                                    <label for="start-date">Event starts</label>
+                                    <input type="date" class="time-input" placeholder="Event starts" name="start-date" id="event-date-start" required>
+                                </div>
+                                <div class="time-container">
+                                    
+                               <label for="start-time">Time</label>
+                               <input type="time" class="time-input" placeholder="Start time" name="state-time" id="event-time-start" required>
+  
+                                </div>
+                               
+                            </div>
+                           <div class="end">
+                            <div class="class-container">
+                                <label for="end-date">Event ends</label>
+                                <input type="date" class="time-input" placeholder="Event ends" name="end-date" id="event-date-end" required>
+                            </div>
+                           <div class="class-container">
+                            <label for="end-time">Time</label>
+                            <input type="time" class="time-input" placeholder="end time" name="end-time" id="event-time-end" required>
+                           </div>
+                          
+                           </div>
+                          
+                         </div>
+                    </div>
+                   
+                </div>
+            </div>
+
+           
+           
+            </div>
+        </div>
+       
+      
+        
+    </div>
+    <div class="event-list-lower">
+
+        <div class="create-categories">
+            <div class="empty"> </div>
+           
+            <div class="create">
+                <button class="calendar-button" id="button-discard" ><p>Discard</p></button>
+                <button class="create-button" id="button-create"><p id="create-e">Update</p></button>
+            </div>
+        </div>
+
+    </div>
+    <script type="module" src="/edit_event/edit_event.js"></script>
+    <script type="module" src="../create_event/autocompleteGeo.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+ 
+   
+</body>
+</html>

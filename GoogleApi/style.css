@@ -1,0 +1,220 @@
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+ #map {
+  height: 100%;
+}
+
+/* 
+ * Optional: Makes the sample page fill the window. 
+ */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#description {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#infowindow-content .title {
+  font-weight: bold;
+}
+
+#infowindow-content {
+  display: none;
+}
+
+#map #infowindow-content {
+  display: inline;
+}
+
+.pac-card {
+  background-color: #fff;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  padding: 0 0.5em;
+  font: 400 18px Roboto, Arial, sans-serif;
+  overflow: hidden;
+  font-family: Roboto;
+  padding: 0;
+}
+
+#pac-container {
+  padding-bottom: 12px;
+  margin-right: 12px;
+}
+
+.pac-controls {
+  display: inline-block;
+  padding: 5px 11px;
+}
+
+.pac-controls label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+#pac-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 20vw;
+  padding: 10px 11px 10px 13px;
+  text-overflow: ellipsis;
+  width: 400px;
+  
+  margin-top: 40px;
+  justify-self: center;
+  border-radius: 5px;
+  
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+
+#title {
+  color: #fff;
+  background-color: #4d90fe;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 6px 12px;
+}
+
+#target {
+  width: 345px;
+}
+
+
+#floating-panel {
+  position: absolute;
+  top: 70px;
+  left: 1%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: "Roboto", "sans-serif";
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+img{
+  position: absolute;
+  top: 130px;
+  left: 1%;
+  z-index: 5;
+  width: 30px;
+  background-color: #fff;
+  padding: 5px;
+  border: 2px solid #999;
+  text-align: center;
+  font-family: "Roboto", "sans-serif";
+  line-height: 30px;
+  border-radius: 20px;
+ 
+}
+
+#submit-img{
+  top:200px
+
+}
+
+#container-pop {
+
+  position: absolute;
+  background-color: #fff;
+  z-index: 100;
+  /* display:flex; */
+  width: 30%;
+  left:1%;
+  /* bottom:0; */
+  bottom: 2%;
+  /* display: block; */
+  
+ 
+  /* align-content: center; */
+  /* width: 400px; */
+  
+  margin-top: 40px;
+ 
+  border-radius: 5px;
+}
+#popup-img{
+
+  object-fit: contain;
+
+}
+
+#container-pop #re{
+
+  /* color: #4d90fe; */
+ 
+  margin: 5px 5px;
+  font-size: 1.0rem;
+  font-weight: 300;
+  word-wrap: break-word;
+}
+
+.butt{
+  /* margin: 0; */
+  /* padding:0; */
+ /* text-decoration: none; */
+ text-decoration-color: #4d90fe;
+
+}
+
+.path{
+  position: absolute;
+  z-index: 100;
+  /* display:flex; */
+  width: 100%;
+  right:32%;
+  /* bottom:0; */
+  bottom: 10%;
+  /* display: block; */
+  
+ 
+  /* align-content: center; */
+  width: 400px;
+  
+  margin-top: 40px;
+ 
+  border-radius: 5px;
+}
+
+.pathway, .register{
+  margin-right: 20px;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-weight: 600;
+  /* color: white;
+  background-color:#4d90fe; */
+
+  /* visibility: collapse; */
+
+  /* width: 50px; */
+}
+
+html,
+body,
+#map_canvas {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px
+}
+
+
+

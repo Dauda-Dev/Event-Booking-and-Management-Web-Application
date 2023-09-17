@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Mulish"
+      rel="stylesheet"
+    />
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  </head>
+  <body>
+    <div class="container-root">
+      <div class="vertical">
+        <nav class="vertical-nav">
+                <ul class="nav-v-list">
+                  <li><img src="../resources/img/arrow/home (1).svg" alt="" class="icon-side" id="home-nav"></li>
+                    <li> <img src="../resources/img/arrow/calender.svg" alt="" class="icon-side" id="calendar-nav"></li>
+                    <li><img src="../resources/img/arrow/order.svg" alt="" class="icon-side" id="order-nav"></li>
+                    <li><img src="../resources/img/arrow/finance.svg" alt="" class="icon-side" id="finance-nav"></li>
+                   
+                   
+                </ul>
+
+                <div>  <li><img src="../resources/img/arrow/settings.svg" alt="" class="icon-side"></li>
+                </div>
+            </nav>
+      </div>
+      <div class="horizontal">
+        <nav class="navbar">
+          <div class="nav-container">
+            <div class="logo">eventbridge</div>
+
+            <ul class="nav-items">
+              <li id="username">your username</li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="categories">
+          <div class="heading">
+            <h1 id="test">Events</h1>
+          </div>
+          <nav class="navbar-categories">
+            <ul class="nav-items">
+             
+              <li id="registered-events">
+                <div class="back-arr"><img src="/resources/img/arrow/back-arrow.svg" alt="" class="back-arr">
+                <a href="" >Registered Events</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="create-categories">
+          <div class="empty"></div>
+          <div class="list-calender">
+            <button class="list-button"><p>List</p></button>
+            <button class="calendar-button"><p>Calendar</p></button>
+          </div>
+          <div class="create">
+            <button class="create-button" id="create-btn" >
+              <p>Create Event</p>
+            </button>
+          </div>
+        </div>
+
+        <div class="search-container">
+          <div class="searchbar">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Search events"
+            />
+          </div>
+
+          <div class="status">
+            <select name="status" id="event-status">
+              <option value="all">All</option>
+                            <option value="music and Arts">music and Arts</option>
+                            <option value="expo">expo</option>
+                            <option value="science">science</option>
+                            <option value="Free">Free</option>
+                            <option value="Travel & outdoor">Travel & outdoor</option>
+                            <option value="Business">Business</option>
+                            <option value="Health">Health</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="event-list">
+          <div class="list-heading">
+            <div>Event</div>
+            <div id="three">
+              <div style="color:black">Sold </div>
+              <div style="color:black">Gross</div>
+              <div style="color:black">Status</div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="list-event">
+          
+        </ul>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- <script src="sweetalert2.all.min.js"></script> -->
+    <script type="module" src="/EventListPage/eventlist.js"></script>
+  </body>
+</html>
